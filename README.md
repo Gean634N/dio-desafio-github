@@ -1,2 +1,4 @@
-# dio-desafio-github
-Desafio de projeto git/github
+# Repositório do desafio de projeto git/github
+
+### Etapas
+ - [X] 1 - Criar o repositório no github
