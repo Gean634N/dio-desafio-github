@@ -12,7 +12,7 @@ Reforçar seu conhecimento em Git com um desafio de projeto prático, onde foram
   - [Fazer alterações localmente](#3---fazer-alterações-localmente).
   - [Realizar os devidos commits](#4---realizar-os-devidos-commits).
   - [Subir as alterações para o repositório remoto](#5---subir-as-alterações-para-o-repositório-remoto).
-
+----
 
 ### 1 - Criar o repositório no github
  - Clicar no foto de perfil no canto superior direito.
