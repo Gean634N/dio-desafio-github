@@ -13,7 +13,7 @@ O bootcamp Impulso JavaScript Evolution é para qualquer dev que tem como foco e
 - [x] 1-3: _[Desafio de Projeto - Criando seu primeiro Repositório](MODULO_1/project-criando-seu-primeiro-repositorio/)_
 
 ##### Modulo II: Fundamentos Web com HTML e CSS
-- [ ] 2-1: _Primeiros passos para desenvolvimento Web_
+- [x] 2-1: _Primeiros passos para desenvolvimento Web_
 - [ ] 2-2: _Introdução a criação de websites com HTML5 e CSS3_
 - [ ] 2-3: _Posicionando elementos com Flexbox e CSS_
 - [ ] 2-4: _JavaScript - DOM e seletores_

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Meu primeiro site HTML</title>
+  </head>
+
+  <body>
+    <div id="main"></div>
+  </body>
+
+  <script>
+    window.addEventListener('load', function() {
+      const main = document.getElementById('main');
+
+      for (let i = 0; i < 10; i++) {
+        const span = document.createElement('span');
+        span.innerHTML = `Linha numero: ${i} </br>`;
+      
+        main.appendChild(span);
+      }
+    })
+  </script>
+
+</html>

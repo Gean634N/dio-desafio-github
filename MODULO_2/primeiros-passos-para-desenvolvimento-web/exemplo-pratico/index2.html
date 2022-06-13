@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Meu primeiro site HTML</title>
+  </head>
+
+  <style>
+    .linha {
+      font-weight: bold;
+      color: green;
+      padding-left: 10px;
+      line-height: 50px;
+    }
+  </style>
+
+  <body>
+    <div id="main">
+
+    </div>
+  </body>
+
+  <script>
+    window.addEventListener('load', function() {
+      // alert('Hello, world!');
+      
+      const main = document.getElementById('main');
+
+      for (let i = 0; i < 10; i++) {
+        const span = document.createElement('span');
+        span.innerHTML = `Linha numero: ${i} </br>`;
+        span.className = 'linha';
+        
+        main.appendChild(span);
+      }
+
+      setTimeout(() => alert('Hello, world!'), 100);
+    })
+  </script>
+
+</html>
