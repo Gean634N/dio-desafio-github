@@ -14,7 +14,7 @@ O bootcamp Impulso JavaScript Evolution é para qualquer dev que tem como foco e
 
 ##### Modulo II: Fundamentos Web com HTML e CSS
 - [x] 2-1: _Primeiros passos para desenvolvimento Web_
-- [ ] 2-2: _Introdução a criação de websites com HTML5 e CSS3_
+- [ ] 2-2: _[Introdução a criação de websites com HTML5 e CSS3](MODULO_2/2.2_introducao-criacao-de-websites-com-html5-e-css3)_
 - [ ] 2-3: _Posicionando elementos com Flexbox e CSS_
 - [ ] 2-4: _JavaScript - DOM e seletores_
 - [ ] 2-5: _[Desafio de Projeto - Recriando a pagina inicial do Instagram](MODULO_2/project-recriando-a-pagina-inicial-do-instagram/)_
