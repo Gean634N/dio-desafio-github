@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos  - align items</title>
+
+  <style>
+    *{
+      font-family: 'Fira Code', Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ddd;
+      text-align: center;
+    }
+
+    h1 {
+      color: #505050;
+    }
+
+    section h2 {
+      color: white; 
+    }
+
+    section {
+      /* text-align: left; */
+      background-color: #505050;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0 0.5rem 0 0.5rem;
+    }
+
+    .flex-container {
+      max-width: 25rem;
+      border: 2px solid black;
+      background-color: #eee;
+      margin: auto;
+      display: flex;
+      /* align-items -> essa propriedade sera colocada inline */
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .flex-item {
+      background-color: darkblue;
+      margin: 0.313rem;
+      color: white;
+      text-align: center;
+      flex: 1;
+    }
+
+    .central {
+      height: 20rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .central .flex-item {
+      flex: 0;
+      padding: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Align items</h1>
+
+  <h2>Row</h2>
+  <section><h2>Center</h2>
+    <div class="flex-container" style="align-items: center;">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem, sit amet consectetur adipisicing elit.</div>
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit culpa soluta error iste reiciendis enim nesciunt.</div>
+      <div class="flex-item">4</div>
+    </div>
+  </section>
+
+  <section><h2>Stretch</h2>
+    <div class="flex-container" style="align-items: stretch;">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem, sit amet consectetur adipisicing elit.</div>
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit culpa soluta error iste reiciendis enim nesciunt.</div>
+      <div class="flex-item">4</div>
+    </div>
+  </section>
+
+  <section><h2>Flex start</h2>
+    <div class="flex-container" style="align-items: flex-start;">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem, sit amet consectetur adipisicing elit.</div>
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit culpa soluta error iste reiciendis enim nesciunt.</div>
+      <div class="flex-item">4</div>
+    </div>
+  </section>
+
+  <section><h2>Flex end</h2>
+    <div class="flex-container" style="align-items: flex-end;">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem, sit amet consectetur adipisicing elit.</div>
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit culpa soluta error iste reiciendis enim nesciunt.</div>
+      <div class="flex-item">4</div>
+    </div>
+  </section>
+
+  <section><h2>Baseline</h2>
+    <div class="flex-container" style="align-items: baseline;">
+      <div class="flex-item"></br>Item 1</div>
+      <div class="flex-item">Lorem, sit amet consectetur adipisicing elit.</div>
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit culpa soluta error iste reiciendis enim nesciunt.</div>
+      <div class="flex-item">4</div>
+    </div>
+  </section>
+  ----------
+  <h2>Column</h2>
+  <section><h2> Center</h2>
+    <div class="flex-container column" style="align-items: center;">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem, sit amet consectetur adipisicing elit.</div>
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit culpa soluta error iste reiciendis enim nesciunt.</div>
+      <div class="flex-item">4</div>
+    </div>
+  </section> 
+
+  <section><h2>Stretch</h2>
+    <div class="flex-container column" style="align-items: stretch;">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem, sit amet consectetur adipisicing elit.</div>
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit culpa soluta error iste reiciendis enim nesciunt.</div>
+      <div class="flex-item">4</div>
+    </div>
+  </section>
+
+  <section><h2>Flex start</h2>
+    <div class="flex-container column" style="align-items: flex-start;">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem, sit amet consectetur adipisicing elit.</div>
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit culpa soluta error iste reiciendis enim nesciunt.</div>
+      <div class="flex-item">4</div>
+    </div>
+  </section>
+
+  <section><h2>Flex end</h2>
+    <div class="flex-container column" style="align-items: flex-end;">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Lorem, sit amet consectetur adipisicing elit.</div>
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit culpa soluta error iste reiciendis enim nesciunt.</div>
+      <div class="flex-item">4</div>
+    </div>
+  </section>
+
+  <section><h2>Baseline</h2>
+    <div class="flex-container column" style="align-items: baseline;">
+      <div class="flex-item"></br>Item 1</div>
+      <div class="flex-item">Lorem, sit amet consectetur adipisicing elit.</div>
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit culpa soluta error iste reiciendis enim nesciunt.</div>
+      <div class="flex-item">4</div>
+    </div>
+  </section>
+
+  <h2>Alinhar totalmente ao centro</h2>
+  <section>
+    <h2>
+      justify-content: center </br>
+      align-items: center </br>
+      flex: 0
+    </h2>
+    <div class="flex-container central">
+      <div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+    </div>
+  </section>
+</body>
+</html>
