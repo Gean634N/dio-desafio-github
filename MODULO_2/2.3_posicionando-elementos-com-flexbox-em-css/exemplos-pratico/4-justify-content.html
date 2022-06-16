@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos  - justify content</title>
+
+  <style>
+    *{
+      font-family: 'Fira Code', Verdana, sans-serif;
+      color: white;
+    }
+
+    body {
+      background-color: #ddd;
+      text-align: center;
+    }
+
+    h1 {
+      color: #505050;
+    }
+
+    section {
+      /* text-align: left; */
+      background-color: #505050;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0 0.5rem 0 0.5rem;
+    }
+
+    .flex-container {
+      max-width: 25rem;
+      border: 2px solid black;
+      background-color: #eee;
+      margin: 0;
+      display: flex;
+      /* justify-content -> essa propriedade sera incluida inline */
+    }
+
+    .column {
+      flex-direction: column;
+      min-height: 20rem;
+    }
+
+    .flex-item {
+      background-color: darkblue;
+      color: white;
+      margin: 0.313rem;
+      text-align: center;
+      line-height: 3.125rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>justify content</h1>
+
+  <h2>Row</h2>
+  <section><h2>Flex start</h2>
+    <div class="flex-container" style="justify-content: flex-start;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">outro 3</div>
+    </div>
+  </section>
+
+  <section><h2>Flex end</h2>
+    <div class="flex-container" style="justify-content: flex-end;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">outro 3</div>
+    </div>
+  </section>
+
+  <section><h2>Center</h2>
+    <div class="flex-container" style="justify-content: center;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">outro 3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
+  </section>
+
+  <section><h2>Space between</h2>
+    <div class="flex-container" style="justify-content: space-between;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">outro 3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
+  </section>
+
+  <section><h2>Space around</h2>
+    <div class="flex-container" style="justify-content: space-around;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">outro 3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
+  </section>
+
+  <h2>Column</h2>
+  <section><h2>Flex start</h2>
+    <div class="flex-container column" style="justify-content: flex-start;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">outro 3</div>
+    </div>
+  </section>
+
+  <section><h2>Flex end</h2>
+    <div class="flex-container column" style="justify-content: flex-end;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">outro 3</div>
+    </div>
+  </section>
+
+  <section><h2>Center</h2>
+    <div class="flex-container column" style="justify-content: center;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">outro 3</div>
+    </div>
+  </section>
+
+  <section><h2>Space between</h2>
+    <div class="flex-container column" style="justify-content: space-between;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">outro 3</div>
+    </div>
+  </section>
+
+  <section><h2>Space around</h2>
+    <div class="flex-container column" style="justify-content: space-around;">
+      <div class="flex-item">1</div>
+      <div class="flex-item">item 2</div>
+      <div class="flex-item">outro 3</div>
+    </div>
+  </section>
+  
+</body>
+</html>
