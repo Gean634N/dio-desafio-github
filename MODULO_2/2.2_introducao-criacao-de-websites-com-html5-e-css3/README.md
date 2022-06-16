@@ -1,6 +1,6 @@
 # Introdução a Criação de Websites com html5 e CSS3
 
-<style>
+<!-- <style>
 /* mark{
     color:#eee;
     background-color:#6272a4;
@@ -24,7 +24,7 @@ mark a:hover {
 }
 </style>
 
-<mark><a href='#sumário'>Sumário</a></mark>
+<mark><a href='#sumário'>Sumário</a></mark> -->
 
 ## Sumário
 
@@ -71,19 +71,19 @@ E agora podemos ver como é a estrutura básica de um arquivo HTML.
 
 A primeira linha do documento deve ser o `<!DOCTYPE html>`, apesar de parecer um elemento HTML ela apenas diz ao navegador que ele está lidando com um arquivo do tipo HTML5. Os elementos HTML vem logo abaixo.
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ### Tag `<html>`
 
 A tag html é a raiz do seu documento, todos os elementos HTML devem estar dentro dela. E nela nós informamos ao navegador qual é o idioma desse nosso documento, através do atributo lang, para o português brasileiro usamos pt-BR.
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ### Tag `<head>`
 
 A tag head contém elementos que serão lidos pelo navegador, como os metadados - um exemplo é o charset, que é a codificação de caracteres e a mais comum é a UTF-8, o JavaScript com a tag script, o CSS através das tags style e link - veremos a diferença quando falarmos sobre CSS - e o título da página com a tag title.
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ### Tag `<body>`
 
@@ -101,7 +101,7 @@ Como exercício para esse curso iremos construir um site pessoal, e precisamos c
 
 </details>
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ----
 
@@ -112,37 +112,37 @@ Mas em 2014 saiu a quinta versão do HTML, e com ela vieram vários mudanças im
 
 A semântica nos permite descrever mais precisamente o nosso conteúdo, agora um bloco de texto não é apenas uma div, agora é um article e tem mais significado assim. E temos vários elementos para ressignificar as divs:
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### Tag `<section>`
 
 Representa uma seção genérica de conteúdo quando não houver um elemento mais específico para isso.
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### Tag `<header>`
 
 É o cabeçalho da página ou de uma seção da página e normalmente contém logotipos, menus, campos de busca.
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### Tag `<article>`
 
 Representa um conteúdo independente e de maior relevância dentro de uma página, como um post de blog, uma notícia em uma barra lateral ou um bloco de comentários. Um article pode conter outros elementos, como header, cabeçalhos, parágrafos e imagens.
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### Tag `<aside>`
 
 É uma seção que engloba conteúdos relacionados ao conteúdo principal, como artigos relacionados, biografia do autor e publicidade. Normalmente são representadas como barras laterais.
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### Tag `<footer>`
 
 Esse elemento representa o rodapé do conteúdo ou de parte dele, pois ele é aceito dentro de vários elementos, como article e section e até do body. Exemplos de conteúdo de um `<footer>` são informações de autor e links relacionados.
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### Tags `<h1>` a `<h6>`
 
@@ -163,7 +163,7 @@ Dando continuidade ao nosso site iremos montar sua estrutura. Pensei em adiciona
     Não se preocupe com o layout e com conteúdo da página, nós vamos tratar isso mais a frente.
 </details>
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ----
 
@@ -191,7 +191,7 @@ Vamos adicionar um texto fictício a nossa postagem: logo após o fechamento do 
 - Criarei um hyperlink para meu perfil no LinkedIn: adicione o hyperlink no atributo href e o valor _blank no atributo target, assim o link será aberto em outra aba. E em algum outro lugar do texto adicionarei meu e-mail e um link para ele, desta forma: `<a href="mailto:lucas@vilaboim.com" target="_blank">lucas@vilaboim.com</a>`
 </details>
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ----
 
@@ -215,7 +215,7 @@ Vamos adicionar uma imagem ao cabeçalho da página e uma imagem a postagem.
 - E dentro do `<header>` do `<article>` vamos fazer a mesma coisa, mas agora depois do `<h3>`, e no atributo alt colocaremos Editor de texto mostrando códigos HTML.
 </details>
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ----
 
@@ -237,7 +237,7 @@ Adicionaremos uma lista de contatos ao rodapé da nossa página, e para isso usa
 - Crie um elemento ul e dentro dele adicione um `<li>` com um elemento a, no atributo href adicione o link de alguma rede social que você mantenha e, no conteúdo da âncora coloque o nome dessa rede.
 </details>
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ----
 
@@ -257,7 +257,7 @@ E há um último detalhe nesse exemplo: a pseudo-classe. Elementos HTML sofrem a
 
 O a:hover do exemplo significa que a âncora também terá essa aparência quando o usuário passar o mouse por cima de um hyperlink.
 
- <!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+ <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ### ID x Classe
 No exemplo anterior criamos uma regra que altera um elemento HTML diretamente, mas isso significa que todos os elementos `<a>` ficarão com aquela aparência, e normalmente temos sites mais complexos que precisam de várias regras diferentes para elementos iguais.
@@ -289,7 +289,7 @@ No módulo de HTML descobrimos que podemos adicionar CSS de duas formas, com o e
 
 </details>
  
- <!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+ <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
  ----
 
@@ -320,14 +320,14 @@ Para enxergamos o box-model vamos adicionar cores e bordas a alguns elementos.
 - E já que começamos a falar sobre bordas e cor de fundo, no próximo vídeo vamos nos aprofundar nessas propriedades.
 </details>
  
- <!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+ <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ----
 
 ### Estilizando elementos
 Agora que entendemos o box-model podemos focar em deixar nosso site mais bonito, então vamos repassar pelas propriedades já citadas:
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### Padding e Margin
 Anteriormente usamos o padding e o margin da forma mais básica, com apenas um valor, mas eles são mais poderosos que isso. Se quisermos atribuir tamanhos diferentes para cada lado do box nós podemos, e vamos ver três formas de fazer isso.
@@ -346,7 +346,7 @@ A terceira forma é com as propriedades específicas para cada lado, até agora 
 
 Essa opção é mais usada quando temos o mesmo valor para 3 lados, e o quarto precisa ter um valor diferente, então usamos o padding com apenas um valor e uma dessas opções para representar o lado diferente.
 
- <!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+ <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### Background
 A propriedade background também é um atalho para várias propriedades, mas isso vocês podem absorver aos poucos, e uma boa opção de leitura é a documentação do MDN.
@@ -357,7 +357,7 @@ E aqui temos 3 formas de colocar uma cor de fundo, e ainda existem outras.
 
 A primeira é pelo nome da cor em inglês, a segunda é pelo código hexadecimal e a terceira é usando apenas o atalho background.
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### Border
 Vimos que a propriedade border pode ter 3 valores: a largura, a cor e o estilo, mas existem algumas particularidades nisso.
@@ -399,28 +399,28 @@ Neste exercício vamos deixar o nosso site um pouco mais bonito usando as propri
 - E por último adicionaremos um border-radius, 5 pixels são suficientes. Podemos adicionar esse mesmo de valor de border-radius na imagem, para isso vamos acrescentar uma class a imagem antes.
 </details>
  
- <!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+ <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
  ----
 
 ### Estilizando textos
 Já sabemos que podemos mudar cor e tamanho de algumas fontes, e agora vamos nos aprofundar nisso.
 
- <!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+ <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### font-family
 Com o font-family podemos alterar a fonte dos nossos textos, como uma fonte da internet ou uma que esteja instalada no nosso computador, mas vamos nos ater às fontes seguras, chamadas de web safe fonts.
 
 Essas fontes são chamadas assim pois são encontradas em quases todos os sistemas e podem ser usadas sem preocupação.
 
- <!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+ <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### font-size
 O font-size nos ajuda a mudar o tamanho do texto, existem algumas unidades de medida para ele mas por enquanto os pixels são suficientes para nós.
 
- <!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+ <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 #### font-style
 Usamos o font-style para tornar um texto itálico, na maioria das vezes você usará apenas o valor italic para ele, mas se precisar tirar o itálico de um texto você pode usar o valor normal.
 
-<!-- <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div> -->
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
