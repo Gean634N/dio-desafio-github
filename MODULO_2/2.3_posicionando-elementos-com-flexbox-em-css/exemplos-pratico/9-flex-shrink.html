@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos  - flex shrink</title>
+
+  <style>
+    *{
+      font-family: 'Fira Code', Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ddd;
+      text-align: center;
+      font-size:62.5%;
+    }
+
+    h1 {
+      color: #505050;
+    }
+
+    section h2 {
+      color: white; 
+    }
+
+    section {
+      /* text-align: left; */
+      background-color: #505050;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0 0.5rem 0 0.5rem;
+    }
+
+    .flex-container {
+      display: flex;
+      border: 2px solid black;
+      max-width: 50rem;
+      background-color: #eee;
+      margin: 1rem auto;
+    }
+
+    .flex-item {
+      background-color: orangered;
+      color: white;
+      margin: .5rem;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .s-auto {
+      flex-shrink: auto;
+    }
+
+    .s-0 {
+      flex-shrink: 0;
+    }
+
+    .s-10rem {
+      flex-shrink: 10rem;
+    }
+
+    .fg-1 {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flex Shrink</h1>
+  <section>
+    <h2>flex-shrink: auto</h2>
+    <div class="flex-container">
+      <div class="flex-item s-auto fg-1">A</div>
+      <div class="flex-item s-auto fg-1">BBBBBBBB</div>
+      <div class="flex-item s-auto fg-1">C</div>
+      <div class="flex-item s-auto fg-1">DEF</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>flex-shrink: 0</h2>
+    <div class="flex-container">
+      <div class="flex-item s-0 fg-1">A</div>
+      <div class="flex-item s-0 fg-1">BBBbbbbbbbbBBBB</div>
+      <div class="flex-item s-0 fg-1">C</div>
+      <div class="flex-item s-0 fg-1">DEF</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>flex-shrink: 10rem</h2>
+    <div class="flex-container">
+      <div class="flex-item s-10rem fg-1">AAAAAAAAAAAAAA</div>
+      <div class="flex-item s-10rem fg-1">BBB</div>
+      <div class="flex-item s-10rem fg-1">C</div>
+      <div class="flex-item s-10rem fg-1">DEF</div>
+    </div>
+  </section>
+</body>
+</html>
